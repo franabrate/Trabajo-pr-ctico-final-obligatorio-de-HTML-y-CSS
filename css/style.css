@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contenedor {
+    background: #ccc;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    flex-flow: row wrap;
+    height: auto;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../img/background.jpg);
+}
+
+header {
+    background: #000;
+    color: #fff;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    flex-flow: row wrap;
+}
+
+header img {
+    width: 50px;
+}
+
+header img:hover {
+    opacity: 0;
+    animation: animacion;
+    -webkit-animation: animacion 1s;
+    animation-fill-mode: forwards;
+    animation-delay: .1s;
+}
+
+nav {
+    flex: 1 1 25%;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: left;
+    text-decoration: none;
+    padding: 10px;
+    background: rgba(0, 0, 0, .6);
+    color: #fff;
+}
+
+nav a {
+    background: #000;
+    color: #fff;
+    padding: 5px;
+    text-decoration: none;
+}
+
+.main {
+    padding: 20px;
+    flex: 1 1 50%;
+    color: #fff;
+    text-align: center;
+}
+
+.main img {
+    width: 400px;
+}
+
+aside {
+    flex: 1 1 25%;
+    padding: 20px;
+    background: rgba(0, 0, 0, .6);
+    color: #fff;
+}
+
+footer {
+    background: #000;
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    color: #fff;
+}
